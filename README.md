@@ -3,14 +3,22 @@
 # There is WARECRER Tutorial Installation #
 
 git clone https://github.com/warecrer/Pyrit
+
 sudo apt-get install -y gcc python2-dev libssl-dev zlib1g-dev libpcap-dev openssl
+
 cd Pyrit/cpyrit
+
 sed -i "s/COMPILE_AESNI/COMPILE_AESNIX/" _cpyrit_cpu.c
+
 cd ..
+
 ./setup.py clean build install
+
 pyrit -h
 
+
 Thanks Me later.. -Warecrer
+
 
 Credit for JPaulMora (~_-)
 
