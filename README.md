@@ -1,5 +1,21 @@
 ## Please Read
 
+# There is WARECRER Tutorial Installation #
+
+git clone https://github.com/warecrer/Pyrit
+sudo apt-get install -y gcc python2-dev libssl-dev zlib1g-dev libpcap-dev openssl
+cd Pyrit/cpyrit
+sed -i "s/COMPILE_AESNI/COMPILE_AESNIX/" _cpyrit_cpu.c
+cd ..
+./setup.py clean build install
+pyrit -h
+
+Thanks Me later.. -Warecrer
+
+Credit for JPaulMora (~_-)
+
+
+
 Pyrit is old, is outdated and it's still Python2 I am currently attempting to rewrite it from scratch, so thanks for all the stars but remember to keep an eye for Python3 version.
 
 # Pyrit #
